@@ -1,0 +1,4 @@
+In these Initial versions I was using the "trainNetwork" function to train my network and when I was computing the Jacobian, 
+I was mistakenly using the "dlnet" object which was a un-trained network which only has the structure of my desired network but 
+not the trained weights. So in the next versions, I used the "dlnet" object and wrote a training function to train the network and
+then use it to compute the Jacobian.   
